@@ -52,7 +52,7 @@ jobs:
       - name: Install ninja-build
         run: sudo apt-get install ninja-build
       - name: Install MATLAB
-        uses: matlab-actions/setup-matlab@v1
+        uses: matlab-actions/setup-matlab@v3
       - name: Install ccache
         run: sudo apt-get install ccache
       - name: Setup ccache
@@ -98,7 +98,7 @@ jobs:
       - name: Install ninja-build
         run: brew install ninja
       - name: Install MATLAB
-        uses: matlab-actions/setup-matlab@v1
+        uses: matlab-actions/setup-matlab@v3
       - name: Install ccache
         run: brew install ccache
       - name: Setup ccache
@@ -134,7 +134,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install MATLAB
-        uses: matlab-actions/setup-matlab@v1
+        uses: matlab-actions/setup-matlab@v3
       - name: Download Timezone Database
         shell: bash
         run: ci/scripts/download_tz_database.sh
