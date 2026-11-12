@@ -74,7 +74,7 @@ jobs:
           echo $PREFIX
           archery crossbow download-artifacts -f java-jars -t binaries  $PREFIX
       - name: Cache Repo
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: repo
           key: java-nightly-${{ github.run_id }}

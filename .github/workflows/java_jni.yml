@@ -59,7 +59,7 @@ jobs:
           fetch-depth: 0
           submodules: recursive
       - name: Cache Docker Volumes
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: .docker
           key: java-jni-manylinux-2014-${{ hashFiles('cpp/**', 'java/**') }}
@@ -99,7 +99,7 @@ jobs:
           fetch-depth: 0
           submodules: recursive
       - name: Cache Docker Volumes
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: .docker
           key: maven-${{ hashFiles('java/**') }}
