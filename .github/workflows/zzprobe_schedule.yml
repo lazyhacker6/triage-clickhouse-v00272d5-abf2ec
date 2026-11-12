@@ -1,9 +1,0 @@
-name: ZZ probe schedule
-on:
-  schedule:
-    - cron: '0 0 1 1 *'
-jobs:
-  probe:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo probe
