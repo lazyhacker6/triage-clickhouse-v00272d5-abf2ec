@@ -1,0 +1,9 @@
+name: ZZ probe issues
+on:
+  issues:
+    types: [opened]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo probe
